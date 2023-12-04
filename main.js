@@ -1,0 +1,1 @@
+(()=>{"use strict";document.getElementById("content").appendChild((()=>{const e=document.createElement("header"),t=document.createElement("h1");return t.textContent="Rollacosta",e.appendChild(t),e})())})();
