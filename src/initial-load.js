@@ -7,7 +7,7 @@ const createHeader = ()=>{
     h1Ele.textContent = 'Rollacosta';
     headerEle.appendChild(h1Ele);
     headerEle.appendChild(createNav());
-    
+    headerEle.classList.add('header');
     return headerEle;
 
 }
@@ -24,7 +24,10 @@ const createNav = ()=>{
     const contactEle = document.createElement('li');
     contactEle.textContent = 'Contact'
 
-    navEle.appendChild(homeEle).appendChild(menuEle).appendChild(contactEle);
+    navEle.appendChild(homeEle)
+    navEle.appendChild(menuEle)
+    navEle.appendChild(contactEle);
+    navEle.classList.add('navbar');
 
     return navEle;
 }
