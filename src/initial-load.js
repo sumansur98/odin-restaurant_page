@@ -1,3 +1,6 @@
+import loadHome from "./load-home";
+import loadMenu from "./load-menu";
+import loadContact from "./load-contact";
 
 const createHeader = ()=>{
 
@@ -17,12 +20,21 @@ const createNav = ()=>{
 
     const homeEle = document.createElement('li');
     homeEle.textContent = 'Home'
+    homeEle.addEventListener('click', ()=>{
+        loadHome();
+    })
 
     const menuEle = document.createElement('li');
     menuEle.textContent = 'Menu'
+    menuEle.addEventListener('click',()=>{
+        loadMenu();
+    })
 
     const contactEle = document.createElement('li');
-    contactEle.textContent = 'Contact'
+    contactEle.textContent = 'Contact';
+    contactEle.addEventListener('click', ()=>{
+        loadContact();
+    })
 
     navEle.appendChild(homeEle)
     navEle.appendChild(menuEle)
@@ -39,6 +51,8 @@ const loadInitialPage = () => {
     const mainDiv = document.createElement('div')
     mainDiv.id = 'mainContentDiv'
     contentDiv.appendChild(mainDiv);
+
+    loadHome();
 }
 
 export default loadInitialPage;
