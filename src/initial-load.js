@@ -33,7 +33,12 @@ const createNav = ()=>{
 }
 
 const loadInitialPage = () => {
-    document.getElementById('content').appendChild(createHeader());
+    const contentDiv = document.getElementById('content')
+    contentDiv.appendChild(createHeader());
+    
+    const mainDiv = document.createElement('div')
+    mainDiv.id = 'mainContentDiv'
+    contentDiv.appendChild(mainDiv);
 }
 
 export default loadInitialPage;
