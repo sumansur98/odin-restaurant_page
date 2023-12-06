@@ -1,6 +1,7 @@
 import loadHome from "./load-home";
 import loadMenu from "./load-menu";
 import loadContact from "./load-contact";
+//import Restaurant from './restaurant.jpg'
 
 const createHeader = ()=>{
 
@@ -51,6 +52,12 @@ const loadInitialPage = () => {
     const mainDiv = document.createElement('div')
     mainDiv.id = 'mainContentDiv'
     contentDiv.appendChild(mainDiv);
+
+    const backgroundImage = new Image();
+    backgroundImage.src = Restaurant;
+
+
+
 
     loadHome();
 }

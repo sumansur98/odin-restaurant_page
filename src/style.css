@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+#content {
+    background: url('./restaurant.jpg') no-repeat fixed center;
+    height : 100vh;
+}
+
 .header {
     display: flex;
     flex-direction: column;
